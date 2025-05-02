@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E3F2FD"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+
+        <!-- Expense Name -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="527dp"
+            android:layout_height="95dp"
+            app:cardBackgroundColor="@color/design_default_color_primary_dark">
+
+
+            <TextView
+                android:id="@+id/addTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="Add Expense"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/reasonDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expense Name" />
+
+        <EditText
+            android:id="@+id/edReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g Groceries" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/descDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Description" />
+
+        <EditText
+            android:id="@+id/edDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g Woolworths monthly shopping" />
+
+        <!-- Category -->
+        <TextView
+            android:id="@+id/catDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Category" />
+
+        <EditText
+            android:id="@+id/edCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g Food" />
+
+        <!-- Amount -->
+        <TextView
+            android:id="@+id/buyDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Amount" />
+
+        <EditText
+            android:id="@+id/edBuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g R1000"
+            android:inputType="numberDecimal" />
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Date" />
+
+        <!-- You can use EditText or a clickable TextView depending on how your Java handles it -->
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ed_shape"
+            android:focusable="false"
+            android:hint="Select date"
+            android:inputType="none"
+            android:padding="10dp" />
+
+        <!-- Receipt Image -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Attach Receipt" />
+        <!--
+        <ImageView
+            android:id="@+id/imageReceipt"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+        <Button
+            android:id="@+id/btnUploadPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Photo" />
+        -->
+        <ImageView
+            android:id="@+id/imageReceipt"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:id="@+id/btnUploadPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Photo" />
+
+        <!-- Submit Button -->
+        <TextView
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#008577"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Add Expense to SQLite"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>
